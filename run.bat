@@ -1,7 +1,7 @@
 @echo off
 cd /d "%~dp0"
 if not exist ".venv\Scripts\python.exe" (
-  echo First run install.ps1 in PowerShell.
+  echo First run install.bat in this folder.
   pause
   exit /b 1
 )
