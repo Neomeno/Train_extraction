@@ -5,8 +5,8 @@
 ## 準備
 
 1. ZIP を展開し、展開先の `trainclip` フォルダを開きます。
-2. `install.bat` をダブルクリックします。Python 3.10 以降があれば利用します。この PC のように Codex Desktop に Python が同梱されている場合は、その Python も自動で探します。Python が見つからなければ [Python 公式サイト](https://www.python.org/downloads/windows/)から 64-bit 版を導入してください。インストーラーの内容を PowerShell に1行ずつ貼り付けないでください。
-3. [FFmpeg 公式ダウンロードページ](https://ffmpeg.org/download.html)から FFmpeg を導入し、`ffmpeg` と `ffprobe` を PATH から使えるようにします。`install.bat` はこれらを確認し、見つからない場合は警告します。
+2. `install.bat` をダブルクリックします。Python 3.10 以降があれば利用します。Python が見つからなければ [Python 公式サイト](https://www.python.org/downloads/windows/)から 64-bit 版を導入してください。インストーラーの内容を PowerShell に1行ずつ貼り付けないでください。
+3. [FFmpeg 公式ダウンロードページ](https://ffmpeg.org/download.html)から FFmpeg を導入し、`ffmpeg` と `ffprobe` を PATH から使えるようにしています。`install.bat` はこれらを確認し、見つからない場合は警告します。
 4. `run.bat` を開きます。AI 関連パッケージは容量が大きいため、初回の導入には時間がかかります。
 
 初期モデルは TorchVision の `fasterrcnn_mobilenet_v3_large_320_fpn` の `COCO_V1` 重みです。初回使用時に重みが取得されるため、その時だけインターネット接続が必要です。その後は取得済みの重みでローカル解析できます。事前に用意した互換 `state_dict` ファイルを指定する場合は、「モデル」欄にそのパスを入力してください。モデルの出力カテゴリは COCO の定義と同じである必要があります。
